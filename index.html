@@ -20,32 +20,35 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="header__logo">
-                        <img src="" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="header__feedback">
-                        <div class="header__feedback_phone">
-                            <a href="tel:+380979779797">+38(097) 977-97-97</a>
-                            <a href="tel:+380509779797">+38(050) 977-97-97</a>
+            <div class="header_information">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="header__logo">
+                            <img src="images/logo.png" alt="Logo">
                         </div>
-                        <div class="header__feeback_callback">
-                            <a href="">Обратная связь</a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="header__feedback">
+                            <div class="header__feedback_phone">
+                                <a href="tel:+380979779797">+38(097) 977-97-97</a>
+                                <a href="tel:+380509779797">+38(050) 977-97-97</a>
+                            </div>
+                            <div class="header__feeback_callback">
+                                <a href="#" id="callback">Обратная связь</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="header__general_menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand mob_menu" href="#">Меню</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,9 +67,260 @@
         </div>
     </header>
 
-    <footer>
+    <div class="banner__slider">
+        <div class="banner__slider_content">
+            <img src="images/slider/slide_image_2.jpg" alt="First slide">
+            <img src="images/slider/slide_image_2.jpg" alt="Two slide">
+            <img src="images/slider/slide_image_2.jpg" alt="Three slide">
+        </div>
+    </div>
 
+    <div class="main_content">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li class="active_breadcrumbs"><a href="#">Главная</a></li>
+                    <li><span>/</span></li>
+                    <li class="active_breadcrumbs"><a href="#">Каталог</li>
+                    <li><span>/</span></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar_left">
+                        <div class="catalog_sidebar_left">
+                            <ul class="catalog_sidebar__category">
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Автомобили</p>
+                                    <ul class="sub_category collapse" id="collapseOne" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <li><a href="">Подкатегоиря 1</a></li>
+                                        <li><a href="">Подкатегоиря 2</a></li>
+                                        <li><a href="">Подкатегоиря 3</a></li>
+                                        <li><a href="">Подкатегоиря 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">
+                                    <p class="active_category">Бытовая техника</p>
+                                    <ul class="sub_category collapse show" id="collapseTwo" aria-labelledby="headingTwo"
+                                        data-parent="#accordion">
+                                        <li><a href="">Микроволновки</a></li>
+                                        <li><a href="">Холодильники</a></li>
+                                        <li><a href="">Посудомоенчные машины</a></li>
+                                        <li class="active_subcategory"><a href="">Чайники</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">
+                                    <p>Мобильная техника</p>
+                                    <ul class="sub_category collapse" id="collapseThree" aria-labelledby="headingThree"
+                                        data-parent="#accordion">
+                                        <li><a href="">Подкатегоиря 1</a></li>
+                                        <li><a href="">Подкатегоиря 2</a></li>
+                                        <li><a href="">Подкатегоиря 3</a></li>
+                                        <li><a href="">Подкатегоиря 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour">
+                                    <p>Компьютеры</p>
+                                    <ul class="sub_category collapse" id="collapseFour" aria-labelledby="headingFour"
+                                        data-parent="#accordion">
+                                        <li><a href="">Подкатегоиря 1</a></li>
+                                        <li><a href="">Подкатегоиря 2</a></li>
+                                        <li><a href="">Подкатегоиря 3</a></li>
+                                        <li><a href="">Подкатегоиря 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="true" aria-controls="collapseFive">
+                                    <p>Одежда</p>
+                                    <ul class="sub_category collapse" id="collapseFive" aria-labelledby="headingFive"
+                                        data-parent="#accordion">
+                                        <li><a href="">Подкатегоиря 1</a></li>
+                                        <li><a href="">Подкатегоиря 2</a></li>
+                                        <li><a href="">Подкатегоиря 3</a></li>
+                                        <li><a href="">Подкатегоиря 4</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="main_category" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="true" aria-controls="collapseSix">
+                                    <p>Недвижимость</p>
+                                    <ul class="sub_category collapse" id="collapseSix" aria-labelledby="headingSix"
+                                        data-parent="#accordion">
+                                        <li><a href="">Подкатегоиря 1</a></li>
+                                        <li><a href="">Подкатегоиря 2</a></li>
+                                        <li><a href="">Подкатегоиря 3</a></li>
+                                        <li><a href="">Подкатегоиря 4</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="downloads_sidebar_left">
+                            <a href="download/prais.xlsx" download=""><img src="images/download/dowlnload.jpg" alt="download_image">
+                                <p>Прайс-лист</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="catalog_products">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="products__cart">
+                                    <img src="images/products/nophoto.jpg" alt="No photo">
+                                    <p>Самый клевый чайник, который надо купить</p>
+                                    <div class="product__cart_price">
+                                        <p>900 грн</p>
+                                        <a href="javascript:void(0);"><img src="images/basket.png" alt="basket"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="products__cart">
+                                    <img src="images/products/nophoto.jpg" alt="No photo">
+                                    <p>Самый клевый чайник, который надо купить</p>
+                                    <div class="product__cart_price">
+                                        <p>900 грн</p>
+                                        <a href="javascript:void(0);"><img src="images/basket.png" alt="basket"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="products__cart">
+                                    <img src="images/products/nophoto.jpg" alt="No photo">
+                                    <p>Самый клевый чайник, который надо купить</p>
+                                    <div class="product__cart_price">
+                                        <p>900 грн</p>
+                                        <a href="javascript:void(0);"><img src="images/basket.png" alt="basket"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="products__cart">
+                                    <img src="images/products/nophoto.jpg" alt="No photo">
+                                    <p>Самый клевый чайник, который надо купить</p>
+                                    <div class="product__cart_price">
+                                        <p>900 грн</p>
+                                        <a href="javascript:void(0);"><img src="images/basket.png" alt="basket"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="products__cart">
+                                    <img src="images/products/nophoto.jpg" alt="No photo">
+                                    <p>Самый клевый чайник, который надо купить</p>
+                                    <div class="product__cart_price">
+                                        <p>900 грн</p>
+                                        <a href="javascript:void(0);"><img src="images/basket.png" alt="basket"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="catalog_pagination">
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active_page"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="catalog_description">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Компания «АЙДИА ДИДЖИТАЛ ЭДЖЕНСИ» существует уже 2 года. Мы занимаемся
+                                        внедрением интернет-инструментов, которые помогают бизнесу наших клиентов расти
+                                        и приносить прибыль. За это время мы создали более 20 сайтов для разных
+                                        направлений бизнеса. На данный момент наш коллектив состоит из 13 сотрудников.
+                                        Мы заинтересованы в постоянном развитии и стремимся предоставлять нашим
+                                        клиентам качественные услуги. Девиз нашей компании «КРЕАТИВ И КОММУНИКАЦИИ В
+                                        СТИЛЕ ROCK'N'ROLL»</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="more_info">Читать дальше</button>
+                                    <div class="more_info_content">
+                                    <p>Вторым направлением нашей деятельности является интернет-маркетинг. На данный
+                                        момент мы работаем с более чем 20 постоянными клиентами в разных сферах
+                                        интернет-маркетинга. При этом в работе основной акцент мы делаем на качестве
+                                        работ, а так же применяем собственные уникальные разработки в области SEO
+                                        продвижения и рекламы в социальных сетях. На данный момент отдел маркетинга
+                                        состоит из 6 человек под руководством ведущего специалиста. Отдел маркетинга
+                                        тесно сотрудничает с отделом разработки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="footer_info">
+                        <p>© 2012-2018 «Пиксель»</p>
+                        <a href="mailto:info@name.com">info@name.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="/">Каталог</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Прайс-лист</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="developers">
+                        <img src="images/company.png" alt="developers studio">
+                        <a href="#"><span>Разработка сайта</span> - <br>компания ideaDigital.Agency</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </footer>
+
+    <div class="feedback__form">
+        <div class="feedback__form_overlay"></div>
+        <div class="feedback__form_content">
+                <div class="feedback__form_close">
+                        <img src="images/close.png" alt="close">
+                    </div>
+            <h4>Обратная связь</h4>
+            <form action="" method="POST" novalidate class="form">
+                <p>Ваше имя *</p>
+                <input type="text" name="name" required class="required_input">
+                <p>Телефон *</p>
+                <input type="tel" name="phone" required class="required_input">
+                <p>Email *</p>
+                <input type="mail" name="mail" required class="required_input">
+                <p>Сообщение</p>
+                <textarea name="message" id="" cols="20" rows="5"></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
 
     <!-- CDN jQuery lib -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
