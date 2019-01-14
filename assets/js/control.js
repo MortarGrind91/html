@@ -20,11 +20,11 @@ $(function () {
         var requiredInp = $(".required_input");
         if (!this.checkValidity()) {
             e.preventDefault();
-            if (requiredInp.val() == '') {
-                requiredInp.addClass("error_input");
-                $(".error_input").attr("placeholder", "Поле обязательно для заполнения");
-            }
             requiredInp.each(function () {
+                if ($(this).val() == '') {
+                    $(this).addClass("error_input");
+                    $(".error_input").attr("placeholder", "Поле обязательно для заполнения");
+                }
                 $(this).on("focus", function () {
                     $(this).removeAttr("placeholder");
                     $(this).removeClass("error_input");
