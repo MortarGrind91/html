@@ -1,4 +1,5 @@
 $(function () {
+    // slick slide activate
     $(".banner__slider_content").slick({
         slidesToshow: 1,
         slideToScroll: 1,
@@ -16,6 +17,13 @@ $(function () {
         }]
     });
 
+    //active category
+
+    $(".main_category p ").on("click", function () {
+        $(this).toggleClass("active_category");
+    });
+
+    // Validate form
     $('.form').on('submit', function (e) {
         var requiredInp = $(".required_input");
         if (!this.checkValidity()) {
@@ -33,6 +41,7 @@ $(function () {
         }
     });
 
+    // Popup form
     $("#callback").on("click", function (e) {
         e.preventDefault();
         $(".feedback__form_content").animate({
@@ -49,7 +58,7 @@ $(function () {
         }, 1000);
         $(".feedback__form_overlay").hide();
     });
-
+    // mobile button more info
     $(".more_info").on("click", function () {
         $(".more_info_content").show();
         $(this).hide();
