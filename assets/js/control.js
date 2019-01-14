@@ -18,7 +18,6 @@ $(function () {
     });
 
     //active category
-
     $(".main_category p ").on("click", function () {
         $(this).toggleClass("active_category");
     });
